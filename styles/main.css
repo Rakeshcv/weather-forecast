@@ -1,0 +1,8 @@
+body{
+    font-family: "Lato","Open Sans", sans-serif;
+    background: url("../images/image.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
