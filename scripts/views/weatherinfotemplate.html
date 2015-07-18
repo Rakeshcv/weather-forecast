@@ -1,0 +1,76 @@
+
+<div class="forecast">
+    <div class="day row">
+
+        <div class="weekday col-xs-4">
+            <p>
+                Date
+            </p>
+        </div>
+
+
+        <!-- icon -->
+        <div class="weather col-xs-3">
+
+        </div>
+
+        <div class="col-xs-1"></div>
+
+        <!-- low -->
+        <div class="low col-xs-2">
+            <p>
+
+                Min
+            </p>
+        </div>
+
+        <!-- high -->
+        <div class="high col-xs-2">
+            <p>
+
+                Max
+            </p>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="forecast " ng-repeat="list in data.list">
+    <div class="day row">
+
+        <!-- datetime -->
+        <div class="weekday col-xs-4">
+           <p>
+            {{list | getDate: $index}}
+           </p>
+        </div>
+
+
+        <!-- icon -->
+        <div class="weather col-xs-3">
+            <img ng-src="http://openweathermap.org/img/w/{{list.weather[0].icon}}.png"/>
+        </div>
+
+        <div class="col-xs-1"></div>
+
+        <!-- low -->
+        <div class="low col-xs-2">
+            <p>
+
+            {{list.temp.min}}
+            </p>
+        </div>
+
+        <!-- high -->
+        <div class="high col-xs-2">
+            <p>
+
+            {{list.temp.max}}
+            </p>
+
+        </div>
+    </div>
+</div>
+
+

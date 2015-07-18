@@ -23,8 +23,8 @@ h1{
 
 
 input[type="text"] {
-    height: 67px;
-    font-size: 55px;
+    height: 70px;
+    font-size: 45px;
     display: inline-block;
     font-weight: 100;
     border: none;
@@ -101,5 +101,40 @@ input:-ms-input-placeholder {
     top: 100px;
     padding-top: 15px;
 }
+
+.day > div {
+    font-weight: bold;
+    line-height: 48px;
+}
+
+.weekday span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.weekday p {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.weather img {
+    width: 48px;
+}
+
+.high p,
+.low p,
+.hourly .temp {
+    font-size: 16px;
+}
+
+
+.forecast{
+    background-color: #419641;
+    background-color: #a6e1ec;
+    opacity: .65;
+}
+
+
 
 

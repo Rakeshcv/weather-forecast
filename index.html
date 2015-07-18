@@ -2,6 +2,7 @@
 <html lang="en" ng-app="weatherApp">
 <head>
     <meta charset="UTF-8">
+    <meta name="google-site-verification" content="R7x8PK8U5xW3_fcizmH3A2W9B9gx2AYE2nfgF5AmJFA" />
     <meta name="viewport" content="width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Weather Forecast</title>
@@ -25,12 +26,12 @@
                 </div>
 
             </form>
-
             <div class="flow" ng-show="data">
                 <weather-info data="data"></weather-info>
             </div>
         </div>
     </div>
+
 </div>
 
 
@@ -40,5 +41,6 @@
 <script src="scripts/directives/weatherInfo.js"></script>
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/services/forecastService.js"></script>
+<script src="scripts/filter/dateFiter.js"></script>
 </body>
 </html>

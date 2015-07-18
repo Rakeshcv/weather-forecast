@@ -8,6 +8,7 @@ app.directive('weatherInfo', function () {
         scope:{
             data: '='
         },
+        controller: 'MainCtrl',
         templateUrl: 'scripts/views/weatherinfotemplate.html'
     }
 });

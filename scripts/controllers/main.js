@@ -20,8 +20,10 @@ app.controller('MainCtrl',['$scope','forecastService', function ($scope,forecast
             }
         }
 
+
         $scope.data = data;
-        console.log(data);
+
+        console.log($scope.data);
 
     };
 
@@ -29,7 +31,5 @@ app.controller('MainCtrl',['$scope','forecastService', function ($scope,forecast
         $scope.data = "Network Error"
     };
 
-    $scope.toController = function () {
-        alert();
-    }
+
 }]);
