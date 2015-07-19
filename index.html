@@ -16,7 +16,7 @@
 
 <div class="container" >
     <div class="row">
-        <div class="col-md-6 col-md-offset-3 text-center">
+        <div class="col-md-6   col-md-offset-3   text-center">
             <h1>Weather Forecast</h1>
 
             <form ng-submit="getData()" autocomplete="on">
@@ -29,9 +29,13 @@
             </form>
 
 
-            <div class="flow" ng-show="data">
+            <div class="flow" ng-show="error == false" >
                 <h2>5-day forecast - {{data.city.name}}, {{data.city.country}}</h2>
                 <weather-info data="data"></weather-info>
+            </div>
+
+            <div class="flow" ng-show="error">
+                <h2>{{data}}</h2>
             </div>
         </div>
     </div>
