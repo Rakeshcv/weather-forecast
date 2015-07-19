@@ -1,5 +1,5 @@
 
-<div class="forecast">
+<div class="forecast no-select text-center">
     <div class="day row">
 
         <div class="weekday col-xs-4">
@@ -20,7 +20,7 @@
         <div class="low col-xs-2">
             <p>
 
-                Min
+                Min &#8451
             </p>
         </div>
 
@@ -28,7 +28,7 @@
         <div class="high col-xs-2">
             <p>
 
-                Max
+                Max &#8451
             </p>
 
         </div>
@@ -36,7 +36,7 @@
 </div>
 
 
-<div class="forecast " ng-repeat="list in data.list">
+<div class="forecast no-select text-center" ng-repeat="list in data.list">
     <div class="day row">
 
         <!-- datetime -->
@@ -49,7 +49,7 @@
 
         <!-- icon -->
         <div class="weather col-xs-3">
-            <img ng-src="http://openweathermap.org/img/w/{{list.weather[0].icon}}.png"/>
+            <img ng-src="http://openweathermap.org/img/w/{{list.weather[0].icon}}.png" title="{{list.weather[0].main}}" alt="{{list.weather[0].main}}"/>
         </div>
 
         <div class="col-xs-1"></div>

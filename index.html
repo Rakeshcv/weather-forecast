@@ -26,7 +26,10 @@
                 </div>
 
             </form>
+
+
             <div class="flow" ng-show="data">
+                <h2>5-day forecast - {{data.city.name}}, {{data.city.country}}</h2>
                 <weather-info data="data"></weather-info>
             </div>
         </div>

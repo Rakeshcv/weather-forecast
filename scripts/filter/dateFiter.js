@@ -6,11 +6,8 @@
 
 app.filter('getDate', function () {
     return function (data,index) {
-
-        console.log(index);
             var dates = new Date();
 
-            console.log(dates.getDate() + "-" + dates.getMonth()+1 + "-" + dates.getFullYear());
 
             var month =  parseInt(dates.getMonth())+1;
 

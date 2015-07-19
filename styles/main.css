@@ -11,13 +11,16 @@ body{
     background-size: cover;
 }
 
-h1{
+h1,h2{
     font-weight: 400;
-    letter-spacing: 1px;
-    font-size: 38px;
-    text-transform: uppercase;
-    color: #ffffff;
     text-shadow: 1px 1px 1px black;
+    color: #ffffff;
+}
+
+h1{
+    font-size: 38px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 
@@ -39,6 +42,7 @@ input[type="text"] {
     right: 0;
     background: none;
     z-index: 3;
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
     cursor: pointer;
 }
 
@@ -99,7 +103,7 @@ input:-ms-input-placeholder {
 .flow{
     position: relative;
     top: 100px;
-    padding-top: 15px;
+    padding-top: 35px;
 }
 
 .day > div {
@@ -120,19 +124,26 @@ input:-ms-input-placeholder {
 
 .weather img {
     width: 48px;
+    cursor: pointer;
 }
 
 .high p,
-.low p,
-.hourly .temp {
+.low p{
     font-size: 16px;
 }
 
 
 .forecast{
-    background-color: #419641;
     background-color: #a6e1ec;
     opacity: .65;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 

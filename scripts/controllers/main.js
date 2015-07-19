@@ -7,12 +7,10 @@ app.controller('MainCtrl',['$scope','forecastService', function ($scope,forecast
     $scope.data = null;
 
     $scope.getData = function () {
-        console.log("inside get data");
         forecastService.getForecast($scope.cityName).then(onComplete,onError);
     };
 
     var onComplete = function(data){
-
         if(data.hasOwnProperty('message')){
             if(data.message.toString().indexOf("Error") >= 0){
                 $scope.data = "City not found";
@@ -22,8 +20,6 @@ app.controller('MainCtrl',['$scope','forecastService', function ($scope,forecast
 
 
         $scope.data = data;
-
-        console.log($scope.data);
 
     };
 
